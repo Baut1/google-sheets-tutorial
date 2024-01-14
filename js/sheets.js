@@ -41,7 +41,7 @@ async function editTurno(id, contenido) {
     contenido.email,
     contenido.modelo,
     contenido.problema,
-    new Date().toISOString(),
+    new Date(Date.now()).toLocaleString().split(',')[0],
     contenido.comentario,
   ]
   const filaAEditar = parseInt(id)+1;
